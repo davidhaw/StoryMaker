@@ -6,7 +6,7 @@ $(document).ready(function() {
           success : function (txt) {
 
             var words = txt.split( "\n" );
-            console.log("Random Word From Number: ", epic[getRandomInt(0, 178691)]);
+            console.log("Random Word From Number: ", words[getRandomInt(0, words.length)]);
           }
       });
     });
