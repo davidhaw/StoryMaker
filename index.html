@@ -2,17 +2,33 @@
 <html lang="en">
 <head>
    <meta charset="utf-8"/>
+           <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>Story Maker</title>
    <script src="https://code.jquery.com/jquery-3.4.1.js"
 			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 			  crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+
 </head>
 
 <body>
 
-  <div class="Button">
-      <button id="generate">Generate 5 Random Words</button>
+  <div class="uk-flex">
+    <div id="word1" class="uk-card uk-card-default uk-card-body">Words</div>
+    <div id="word2" class="uk-card uk-card-default uk-card-body uk-margin-left">Will</div>
+    <div id="word3" class="uk-card uk-card-default uk-card-body uk-margin-left">Appear</div>
+    <div id="word4" class="uk-card uk-card-default uk-card-body uk-margin-left">Here</div>
   </div>
+
+  <div class="uk-button uk-button-default">
+    <button id="generate">Generate 5 Random Words</button>
+  </div>
+
 
 </body>

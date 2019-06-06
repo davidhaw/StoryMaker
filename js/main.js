@@ -6,7 +6,23 @@ $(document).ready(function() {
           success : function (txt) {
 
             var words = txt.split( "\n" );
-            console.log("Random Word From Number: ", words[getRandomInt(0, words.length)]);
+            $("#word1").html(function(i, newText) {
+                newText = words[getRandomInt(0, words.length)]
+                return newText;
+            });
+            $("#word2").html(function(i, newText) {
+                newText = words[getRandomInt(0, words.length)]
+                return newText;
+            });
+            $("#word3").html(function(i, newText) {
+                newText = words[getRandomInt(0, words.length)]
+                return newText;
+            });
+            $("#word4").html(function(i, newText) {
+                newText = words[getRandomInt(0, words.length)]
+                return newText;
+            });
+            console.log("Words Set");
           }
       });
     });
